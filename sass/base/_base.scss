@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+    content: '';
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+
+html,
+body {
+    margin: 0px auto;
+    width: 100%;
+    box-sizing: border-box;
+    background: $clr-dark;
+    color: $clr-white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

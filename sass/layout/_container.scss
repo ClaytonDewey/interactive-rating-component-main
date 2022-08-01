@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 32.5rem;
+  margin: 0 auto 3rem;
+  padding: 3rem;
+
+  /* Created with https://www.css-gradient.com */
+  background: #262B33;
+  background: -webkit-radial-gradient(top, #262B33, #171F28);
+  background: -moz-radial-gradient(top, #262B33, #171F28);
+  background: radial-gradient(to bottom, #262B33, #171F28);
+  color: $clr-light-gray;
+  border-radius: 10px;
+
+  .star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $clr-circle-bg;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+  }
+
+  h1,
+  h2 {
+    color: $clr-white;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.number-indicators {
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 2.5rem;
+}
+
+.rating {
+  display: inline-block;
+  padding: .75rem 2rem;
+  border-radius: 50px;
+  background: $clr-circle-bg;
+  color: $clr-primary;
+  margin: 2rem auto 3rem;
+}

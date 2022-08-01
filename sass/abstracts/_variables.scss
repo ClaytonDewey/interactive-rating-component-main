@@ -1,0 +1,23 @@
+// Breakpoints
+$bp-small: 23.4375em; // 375x;
+$bp-large: 90em; // 1440px;
+
+// Media Queries
+$mq-small: 'screen and (min-width: #{$bp-small})';
+$mq-large: 'screen and (min-width: #{$bp-large})';
+
+
+// Colors
+$clr-primary: hsl(25, 97%, 53%);
+$clr-white: hsl(0, 0%, 100%);
+$clr-light-gray: hsl(217, 12%, 63%);
+$clr-dark-gray: hsl(216, 12%, 54%);
+$clr-dark-blue: hsl(213, 19%, 18%);
+$clr-dark: hsl(216, 12%, 8%);
+$clr-circle-bg: hsl(215, 18%, 19%);
+
+
+// Font sizes
+$fs-300: 2.5rem;
+$fs-200: 1.8rem;
+$fs-100: 1.5rem;

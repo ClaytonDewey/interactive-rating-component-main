@@ -1,0 +1,40 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: $clr-white;
+  border: none;
+  transition: background-color .25s ease-in-out, color .25s ease-in-out;
+
+  &-primary {
+    height: 4.5rem;
+    width: 100%;
+    background-color: $clr-primary;
+    border-radius: 5rem;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      background-color: $clr-white;
+      color: $clr-primary;
+    }
+  }
+
+  &-circle {
+    height: 4.5rem;
+    width: 4.5rem;
+    background: $clr-circle-bg;
+    border-radius: 100%;
+
+    &:hover,
+    &:focus {
+      background: $clr-light-gray;
+    }
+
+    &:active,
+    &.active {
+      background: $clr-primary;
+    }
+  }
+}
