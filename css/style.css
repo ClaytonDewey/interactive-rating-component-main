@@ -638,6 +638,10 @@ li {
       background: #959eac; }
     .btn-circle:active, .btn-circle.active {
       background: #fb7413; }
+    @media screen and (min-width: 90em) {
+      .btn-circle {
+        height: 5rem;
+        width: 5rem; } }
 
 .container {
   display: flex;
@@ -668,11 +672,19 @@ li {
     color: white; }
   .container h2 {
     margin-bottom: 2rem; }
+  @media screen and (min-width: 90em) {
+    .container {
+      max-width: 41rem; }
+      .container h1 {
+        margin: 4rem 0 2.5rem; } }
 
 .number-indicators {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-block: 2.5rem; }
+  @media screen and (min-width: 90em) {
+    .number-indicators {
+      margin-block: 3.5rem; } }
 
 .rating {
   display: inline-block;

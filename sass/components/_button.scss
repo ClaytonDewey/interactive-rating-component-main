@@ -36,5 +36,10 @@
     &.active {
       background: $clr-primary;
     }
+
+    @media #{$mq-large} {
+      height: 5rem;
+      width: 5rem;
+    }
   }
 }
