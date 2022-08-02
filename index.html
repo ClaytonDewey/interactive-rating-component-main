@@ -10,7 +10,7 @@
 
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
   <main class="container">
     <!-- Rating state start -->
 
-    <section hidden id="rating">
+    <section id="feedback">
       <div class="star">
         <img src="./images/icon-star.svg" alt="star">
       </div>
@@ -32,22 +32,23 @@
         to help us improve our offering!</p>
 
       <div class="number-indicators">
-        <button class="btn btn-circle">1</button><button class="btn btn-circle">2</button><button
-          class="btn btn-circle">3</button><button class="btn btn-circle">4</button><button
-          class="btn btn-circle">5</button>
+        <button class="btn btn-circle" tabindex="0" aria-selected="true">1</button>
+        <button class="btn btn-circle" tabindex="-1" aria-selected="false">2</button>
+        <button class="btn btn-circle" tabindex="-1" aria-selected="false">3</button>
+        <button class="btn btn-circle" tabindex="-1" aria-selected="false">4</button>
+        <button class="btn btn-circle" tabindex="-1" aria-selected="false">5</button>
       </div>
 
-      <button class="btn btn-primary">Submit</button>
+      <button id="submit" class="btn btn-primary">Submit</button>
     </section>
 
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
 
-    <section id="thank-you" class="text-center">
+    <section hidden id="thank-you" class="text-center">
       <img src="./images/illustration-thank-you.svg" alt="thank you">
-      <p class="rating">You selected <span>4</span> out of 5
-      </p>
+      <p class="rating"></p>
 
       <h2>Thank you!</h2>
 
