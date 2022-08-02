@@ -658,7 +658,7 @@ li {
   background: -moz-radial-gradient(top, #262B33, #171F28);
   background: radial-gradient(to bottom, #262B33, #171F28);
   color: #959eac;
-  border-radius: 10px; }
+  border-radius: 20px; }
   .container .star {
     display: flex;
     justify-content: center;

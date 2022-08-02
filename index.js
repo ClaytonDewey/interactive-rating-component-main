@@ -41,7 +41,6 @@ for (let i = 0; i < ratings.length; i++) {
     removeClass();
     if (event.target.innerHTML === this.innerHTML) {
       this.classList.add("active");
-      this.setAttribute("aria-selected", true);
       rating = i + 1;
       rated = true;
     }
@@ -51,7 +50,6 @@ for (let i = 0; i < ratings.length; i++) {
 function removeClass() {
   for (let i = 0; i < ratings.length; i++) {
     ratings[i].classList.remove("active");
-    ratings[i].setAttribute("aria-selected", false);
   }
 }
 
